@@ -1,0 +1,23 @@
+{
+  "name": "udemy_flexbox",
+  "version": "1.0.0",
+  "description": "BEHOLD MY KICKASS FLEXBOX SKILLZ!!",
+  "main": "index.js",
+  "scripts": {
+    "start": "light-server -s . -p 8123",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SirWernich/udemy_flexbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SirWernich/udemy_flexbox/issues"
+  },
+  "homepage": "https://github.com/SirWernich/udemy_flexbox#readme",
+  "dependencies": {
+    "light-server": "^2.9.1"
+  }
+}
