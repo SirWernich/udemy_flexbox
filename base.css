@@ -51,7 +51,17 @@ p {
 
 /* Flexbox Staff */
 .flex-container {
+    height: 300px;
     display: flex;
+    
+    /*
+        flex-flow: row -> main axis horizontal, cross axis vertical
+        
+        flex-flow: column -> main axis vertical, cross axis horizontal
+    */
+    flex-flow: column;
+    justify-content: space-between;     /* main axis */
+
 }
 
 .flex-item {
