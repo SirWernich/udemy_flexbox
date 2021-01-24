@@ -18,13 +18,14 @@ body {
 }
 
 .flex-container {
+	height: 300px;
 	border: 1px solid white;
 	max-width: 900px;
 	margin: auto;
 }
 
 .flex-item {
-	border: 2px solid white;
+	border: 2px solid red;
 	box-sizing: border-box;
 }
 
@@ -52,19 +53,24 @@ p {
 
 /* Flexbox Staff */
 .flex-container {
-    height: 300px;
-    display: flex;
-    flex-flow: column;
-
-    /* cross axis property */
-    align-items: stretch;   /* default - fill cross axis size */
-    /* align-items: flex-start;   aligns items to cross axis start */
-    /* align-items: flex-end;     aligns items to cross axis end */
-    /* align-items: center;       aligns items to center of cross axis */
-    
-    justify-content: space-between;
+	display: flex;
+	align-items: flex-start;
 }
 
-.flex-item {
+/* align-self -> affects the individual items inside a container */
 
+.flex-item-1 {
+	align-self: stretch;   /* default */
+}
+
+.flex-item-2 {
+    align-self: center;
+}
+
+.flex-item-3 {
+    align-self: end;
+}
+
+.flex-item-4 {
+    align-self: flex-start;
 }
