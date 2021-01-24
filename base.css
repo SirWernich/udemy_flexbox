@@ -20,7 +20,7 @@ body {
 .flex-container {
 	height: 300px;
 	border: 1px solid white;
-	max-width: 900px;
+	max-width: 600px;
 	margin: auto;
 }
 
@@ -53,24 +53,23 @@ p {
 
 /* Flexbox Staff */
 .flex-container {
-	display: flex;
-	align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* use when you have multiple lines of content in container and
+       helps you distribute the remaining space between the lines. 
+    */
+    align-content: space-between;
 }
 
-/* align-self -> affects the individual items inside a container */
-
 .flex-item-1 {
-	align-self: stretch;   /* default */
 }
 
 .flex-item-2 {
-    align-self: center;
 }
 
 .flex-item-3 {
-    align-self: end;
 }
 
 .flex-item-4 {
-    align-self: flex-start;
 }
