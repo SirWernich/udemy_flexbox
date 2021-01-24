@@ -54,22 +54,23 @@ p {
 /* Flexbox Staff */
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
-
-    /* use when you have multiple lines of content in container and
-       helps you distribute the remaining space between the lines. 
-    */
-    align-content: space-between;
 }
 
 .flex-item-1 {
+    /* order: 0; <-- the default */
+    order: 4;
 }
 
 .flex-item-2 {
+    order: 1;   /* puts element after "order:0" elements */
+    order: -1;  /* puts element before "order:0" elements */
+    order: 3;
 }
 
 .flex-item-3 {
+    order: 2;
 }
 
 .flex-item-4 {
+    order: 1;
 }
