@@ -25,6 +25,7 @@ body {
 .flex-item {
     border: 2px solid white;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 h1, h2, h3 {
@@ -52,11 +53,11 @@ p {
 /* Flexbox Staff */
 .flex-container {
     height: 300px;
-    display: flex;
-    flex-flow: row;             /* default, left to right */
-    /* flex-flow: row-reverse;     right to left */
-    /* flex-flow: column;          top to bottom */
-    /* flex-flow: column-reverse;  bottom to top */
+    width: 400px;
+    display: flex;  /* always one line/row/column */
+    flex-flow: row;
+    flex-wrap: wrap;            /* if items don't fit on line, wrap to fit */
+    /* flex-wrap: wrap-reverse; */
 }
 
 .flex-item {
