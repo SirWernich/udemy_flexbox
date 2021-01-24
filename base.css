@@ -54,14 +54,9 @@ p {
 .flex-container {
     height: 300px;
     display: flex;
-    flex-flow: column;
+    flex-flow: column-reverse;
 
-    /* main axis property - applied to the container, not the items inside it */
-    justify-content: flex-start;     /* default - items at the start (left/top) */
-    /* justify-content: flex-end;       items at the end (right/bottom), but not reversed */  
-    /* justify-content: center;         items in the middle */
-    /* justify-content: space-between;  items evenly spaced, but first and last against the ends */
-    /* justify-content: space-around;   items evenly spaced, but half the space at start and end */
+    justify-content: flex-start;    /* align to the bottom, because 'reverse' */
 }
 
 .flex-item {
