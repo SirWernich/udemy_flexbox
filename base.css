@@ -53,15 +53,10 @@ p {
 .flex-container {
     height: 300px;
     display: flex;
-    
-    /*
-        flex-flow: row -> main axis horizontal, cross axis vertical
-        
-        flex-flow: column -> main axis vertical, cross axis horizontal
-    */
-    flex-flow: column;
-    justify-content: space-between;     /* main axis */
-
+    flex-flow: row;             /* default, left to right */
+    /* flex-flow: row-reverse;     right to left */
+    /* flex-flow: column;          top to bottom */
+    /* flex-flow: column-reverse;  bottom to top */
 }
 
 .flex-item {
