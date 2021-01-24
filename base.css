@@ -1,63 +1,67 @@
+
 /*basic styles*/
 html, body {
-    margin: 0;
+	margin: 0;
 }
 html {
-    background: #2c3e50;
+	background: #2c3e50;
 }
 body {
-    font-family: 'Inconsolata', monospace;
-    color: white;
-    width: 80%;
-    margin: 0 auto;
-    padding: 2%;
-    line-height: 1.6;
-    text-align: center;
-    height: 3000px;
+	font-family: 'Inconsolata', monospace;
+	color: white;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	line-height: 1.6;
+	text-align: center;
+	height: 3000px;
 }
 
 .flex-container {
-    border: 1px solid white;
-    max-width: 900px;
-    margin: auto;
+	border: 1px solid white;
+	max-width: 900px;
+	margin: auto;
 }
 
 .flex-item {
-    border: 2px solid white;
-    box-sizing: border-box;
-    border: 1px solid red;
+	border: 2px solid white;
+	box-sizing: border-box;
 }
 
 h1, h2, h3 {
-    color: white;
-    margin: 0;
-    line-height: 1;
-    font-family: 'Asap', sans-serif;
+	color: white;
+	margin: 0;
+	line-height: 1;
+	font-family: 'Asap', sans-serif;
 }
 h1 {
-    font-size: 3em;
+	font-size: 3em;
 }
 h2 {
-    font-size: 4em;
-    margin-bottom: 50px
+	font-size: 4em;
+	margin-bottom: 50px
 }
 h3 {
-    font-size: 1.8em;
-    text-transform: uppercase;
+	font-size: 1.8em;
+	text-transform: uppercase;
 }
 p {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 
 /* Flexbox Staff */
 .flex-container {
     height: 300px;
-    width: 400px;
-    display: flex;  /* always one line/row/column */
-    flex-flow: row;
-    flex-wrap: wrap;            /* if items don't fit on line, wrap to fit */
-    /* flex-wrap: wrap-reverse; */
+    display: flex;
+    flex-flow: column;
+
+    /* main axis property - applied to the container, not the items inside it */
+    justify-content: flex-start;     /* default - items at the start (left/top) */
+    /* justify-content: flex-end;       items at the end (right/bottom), but not reversed */  
+    /* justify-content: center;         items in the middle */
+    /* justify-content: space-between;  items evenly spaced, but first and last against the ends */
+    /* justify-content: space-around;   items evenly spaced, but half the space at start and end */
 }
 
 .flex-item {
