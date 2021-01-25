@@ -54,23 +54,30 @@ p {
 /* Flexbox Staff */
 .flex-container {
     display: flex;
+    flex-flow: column;
+}
+
+.flex-item {
+    flex-grow: 0;   /* default */
+    /*
+        if you want an item to grow twice as fast as the others, set
+        everything to "flex-grow: 1" and the other one to "flex-grow: 2"
+
+        1 vs 4 (four times the growth)
+        etc...
+    */
 }
 
 .flex-item-1 {
-    /* order: 0; <-- the default */
-    order: 4;
 }
 
 .flex-item-2 {
-    order: 1;   /* puts element after "order:0" elements */
-    order: -1;  /* puts element before "order:0" elements */
-    order: 3;
 }
 
 .flex-item-3 {
-    order: 2;
+    flex-grow: 1;   
+
 }
 
 .flex-item-4 {
-    order: 1;
 }
