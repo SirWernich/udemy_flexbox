@@ -20,13 +20,18 @@ body {
 .flex-container {
 	height: 300px;
 	border: 1px solid white;
-	max-width: 600px;
+	max-width: 900px;
 	margin: auto;
 }
 
-.flex-item {
-	border: 2px solid red;
-	box-sizing: border-box;
+
+
+.flex-item-1 {
+	background-color: blue;
+}
+
+.flex-item-2 {
+	background-color: green;
 }
 
 h1, h2, h3 {
@@ -53,31 +58,14 @@ p {
 
 /* Flexbox Staff */
 .flex-container {
-    display: flex;
-    flex-flow: column;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .flex-item {
-    flex-grow: 0;   /* default */
-    /*
-        if you want an item to grow twice as fast as the others, set
-        everything to "flex-grow: 1" and the other one to "flex-grow: 2"
-
-        1 vs 4 (four times the growth)
-        etc...
-    */
-}
-
-.flex-item-1 {
+	flex-shrink: 0;
+	width: 300px;
 }
 
 .flex-item-2 {
-}
-
-.flex-item-3 {
-    flex-grow: 1;   
-
-}
-
-.flex-item-4 {
 }
